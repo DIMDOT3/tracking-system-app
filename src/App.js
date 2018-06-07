@@ -1,31 +1,39 @@
 import React, { Component } from 'react';
 import projects from './seeds';
+import { connect } from 'react-redux';
 import './App.css';
 
 // import components
 import Navbar from './Navbar';
-import OpenProjectsList from './OpenProjectsList';
+import ProjectList from './ProjectList';
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {
-      projects: []
-    }
+    // this.state = {
+    //   projects: []
+    // }
   }
 
-  componentWillMount(){
-    this.setState({projects: projects});
-  }
+  // componentWillMount(){
+  //   this.setState({projects: projects});
+  // }
   render() {
-    const currentProjects = this.state.projects;
     return (
         <div className="App">
           <Navbar />
-          <OpenProjectsList currentProjects={currentProjects} />
+          <ProjectList />
         </div>
     );
   }
 }
 
+function mapStateToProps(reduxState){
+  return {
+    projects: reduxState.projects
+  };
+}
+
 export default App;
+
+

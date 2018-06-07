@@ -2,7 +2,8 @@
 
 /* Table Styling */
 table { 
-  width: 100%; 
+  width: 100%;
+  padding: 15px; 
   border-collapse: collapse; 
 }
 /* Zebra striping */
