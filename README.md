@@ -1,3 +1,13 @@
+## Tracking System App to manage projects
+This app is used for tracking projects.  Note, it is a work in progress, and I will continue adding to it over time.
+
+## Getting Started
+You will need to have Node.js and NPM installed on your machine.  Installation is out of the scope of this project.  Visit [Node.js](https://nodejs.org/en/) for information on install.
+
+You will also have a basic understanding of how to use the command line.  Here is a good tutorial on how to use the command line by [Treehouse](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line).
+
+Once installed, clone this repository into the desired location on your machine.
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
