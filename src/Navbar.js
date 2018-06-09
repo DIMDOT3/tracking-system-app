@@ -13,10 +13,13 @@ class Navbar extends Component {
 			  <div className="collapse navbar-collapse" id="navbarSupportedContent">
 			    <ul className="navbar-nav mr-auto">
 			      <li className="nav-item active">
-			        <a href='#'>Dashboard</a>
+			        <a href='#'>HomePage</a>
 			      </li>
 			      <li className="nav-item">
-			        <a href='#'>Open Projects</a>
+			        <a href='#'>Projects Log</a>
+			      </li>
+			      <li className="nav-item">
+			        <a href='#'>Contacts</a>
 			      </li>
 			    </ul>
 			  </div>

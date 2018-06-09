@@ -15,3 +15,10 @@ export function removeProject(id){
 		id
 	};
 };
+
+export function updateProject(id){
+	return {
+		type: updateProject,
+		id
+	};
+};

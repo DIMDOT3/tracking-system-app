@@ -2,9 +2,11 @@
 
 /* Table Styling */
 table { 
-  width: 100%;
-  padding: 15px; 
+  width: 98%;
+  margin: 1%; 
   border-collapse: collapse; 
+  max-height: 400px;
+  overflow: scroll;
 }
 /* Zebra striping */
 tr:nth-of-type(odd) { 
