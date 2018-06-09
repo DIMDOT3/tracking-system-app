@@ -1,5 +1,5 @@
 ## Tracking System App to manage projects
-This app is used for tracking projects.  Note, it is a work in progress, and I will continue adding to it over time.  The app uses [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
+This app is used for tracking projects.  Note, it is a work in progress, and I will continue adding to it over time.  The app uses [React](https://reactjs.org/) and [Redux](https://redux.js.org/). I will eventually build an API that will be connected to a database for data persistence.
 
 ## Getting Started
 You will need to have Node.js and NPM installed on your machine.  Installation is out of the scope of this project.  Visit [Node.js](https://nodejs.org/en/) for information on install.
