@@ -6,29 +6,29 @@ You will need to have Node.js and NPM installed on your machine.  Installation i
 
 You will also have a basic understanding of how to use the command line.  Here is a good tutorial on how to use the command line by [Treehouse](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line).
 
-### Clone or download the repository
+### 1. Clone or download the repository
 Clone or download this repository into the desired location on your machine. CD into the directory of the files.
 
-### Installing Dependencies
+### 2. Installing Dependencies
 Run the following code in the file directory:
 ```
 npm install
 ```
 The installation might take several minutes.  If successful, the project will now have a "node_modules" directory with all necessary dependencies installed.
 
-### Running the App
+### 3. Running the App
 Run the following code to start up the app:
 ```
 npm start
 ```
 If successful, you should be able to visit "http://localhost:3000/" to see the app.
 
-### Shutting down the App in the terminal
+### 4. Shutting down the App in the terminal
 To terminate the app, run the following code:
 ```
 control + c
 ```
-###
+___
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
