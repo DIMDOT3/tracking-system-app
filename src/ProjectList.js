@@ -4,13 +4,16 @@ import { connect } from 'react-redux';
 
 // components
 import ProjectItem from './ProjectItem';
+import ProjectItemDetail from './ProjectItemDetail';
 import ProjectForm from './ProjectForm';
 
 class ProjectList extends Component {
   constructor(props){
     super(props);
     this.state = {
-      isHidden: true
+      formIsHidden: true,
+      itemDetailIsHidden: true,
+      projectItemDetail: {}
     }
   };
 
@@ -19,18 +22,30 @@ class ProjectList extends Component {
       type: 'REMOVE_PROJECT',
       id
     })
-  }
+  };
 
   toggleHidden = () => {
     this.setState({
-      isHidden: !this.state.isHidden
+      formIsHidden: !this.state.formIsHidden
     })
-  }
+  };
+
+  showItemDetail = (project) => {
+    this.setState({
+      projectItemDetail: project,
+      itemDetailIsHidden: !this.state.itemDetailIsHidden
+    });
+  };
 
 	render(){
 		const projectsList = this.props.projects.map((project) => {
       return(
-        <ProjectItem removeProject={this.removeProject.bind(this, project.id)} project={project} key={project.id} />
+        <ProjectItem 
+          removeProject={this.removeProject.bind(this, project.id)} 
+          project={project} 
+          key={project.id} 
+          showItemDetail={this.showItemDetail}
+        />
       );
     });
 		return(
@@ -42,7 +57,7 @@ class ProjectList extends Component {
             onClick={this.toggleHidden}
           >Add Project</button>
         </header>
-        {!this.state.isHidden && <ProjectForm {...this.props} />}
+        {!this.state.formIsHidden && <ProjectForm {...this.props} />}
   			<table>
           <thead>
             <tr>
@@ -61,6 +76,10 @@ class ProjectList extends Component {
             {projectsList}
           </tbody>
         </table>
+        {!this.state.itemDetailIsHidden && <ProjectItemDetail 
+          itemDetails={this.state.projectItemDetail}
+          showItemDetail={this.showItemDetail} 
+        />}
       </div>
 		);
 	}

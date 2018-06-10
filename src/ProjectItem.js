@@ -1,10 +1,10 @@
 import React from 'react';
 import './ProjectItem.css';
 
-const ProjectItem = ({ project, removeProject }) => (
+const ProjectItem = ({ project, removeProject, showItemDetail }) => (
 	<tr>
 		<td>
-			<a onClick={() => alert('hello!')}><i class="fas fa-info-circle"></i></a>
+			<a onClick={showItemDetail.bind(this, project)}><i class="fas fa-info-circle"></i></a>
 		</td>
 	  <td>{project.dateReceived}</td>
 	  <td>{project.po}</td>
