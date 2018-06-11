@@ -63,7 +63,7 @@ class ProjectList extends Component {
             <tr>
               <th></th>
               <th>DATE RECEIVED</th>
-              <th>PO</th>
+              <th>PO#</th>
               <th>LOCATION</th>
               <th>MANUFACTURER</th>
               <th>CATALOG #</th>
