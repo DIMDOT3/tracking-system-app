@@ -4,7 +4,7 @@ import projects from '../seeds';
 const initialState = {
 	// projects value imported from seeds.js file
 	projects: projects,
-	id: 0
+	id: 3
 }
 
 export default function rootReducer(state=initialState, action){

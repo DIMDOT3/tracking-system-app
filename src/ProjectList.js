@@ -82,7 +82,7 @@ class ProjectList extends Component {
         />}
       </div>
 		);
-	}
+	};
 };
 
 function mapStateToProps(reduxState){

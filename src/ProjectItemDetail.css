@@ -15,4 +15,6 @@
 .item-detail-inner {
 	background: black;
 	padding: 15px;
+	width: 80%;
+	border-radius: 3px;
 }

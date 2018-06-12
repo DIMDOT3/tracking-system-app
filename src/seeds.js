@@ -13,7 +13,9 @@ const projects = [
 		serialNumber: '111231',
 		description: '5mm 0Deg Laparoscope',
 		notes: '',
-		completed: false
+		completed: false,
+		invoice: '',
+		id: 0
 	},
 	{
 		dateReceived: new Date().toString(),
@@ -29,7 +31,9 @@ const projects = [
 		serialNumber: 'A33J231',
 		description: '4mm 30Deg Cystoscope',
 		notes: '',
-		completed: false
+		completed: false,
+		invoice: '',
+		id: 1
 	},
 	{
 		dateReceived: new Date().toString(),
@@ -45,7 +49,9 @@ const projects = [
 		serialNumber: '1566102',
 		description: '5mm 30Deg Laparoscope',
 		notes: '',
-		completed: false
+		completed: false,
+		invoice: '',
+		id: 2
 	},
 	{
 		dateReceived: new Date().toString(),
@@ -61,7 +67,9 @@ const projects = [
 		serialNumber: '1566102',
 		description: '5mm 30Deg Laparoscope',
 		notes: '',
-		completed: false
+		completed: false,
+		invoice: '',
+		id: 3
 	}
 ];
 

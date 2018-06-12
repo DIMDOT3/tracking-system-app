@@ -1,21 +1,75 @@
 import React, {Component} from 'react';
 import './ProjectItemDetail.css';
 
-const ProjectItemDetail = ({itemDetails, showItemDetail}) => (
+const ProjectItemDetail = ({itemDetails, showItemDetail}) => {
+	const itemKeys = Object.keys(itemDetails);
+	return (
 	<div className='item-detail-container'>
 		<div className='item-detail-inner'>
-			<p>Date Received: {itemDetails.dateReceived}</p>
-			<p>PO#: {itemDetails.po}</p>
-			<p>Location: {itemDetails.location}</p>
-			<p>Manufacturer: {itemDetails.manufacturer}</p>
-			<p>Catalog #: {itemDetails.catalogNumber}</p>
-			<p>Serial #: {itemDetails.serialNumber}</p>
-			<p>Description: {itemDetails.description}</p>
-			<p>Notes: {itemDetails.notes}</p>
-			<button onClick={showItemDetail}>Close</button>
+			<form>
+				<div className="form-row">
+			    <div className='col-md-3'>
+			    	<label for="date-received">Date Received</label>
+			    	<input type="date" className="form-control" id="date-received" defaultValue={itemDetails.dateReceived} />
+			  	</div>
+			  	<div className='col-md-3'>
+			    	<label for="date-received">Date Returned</label>
+			    	<input type="date" className="form-control" id="date-received" defaultValue={itemDetails.dateReturned} />
+			  	</div>
+			  	<div className='col-md-3'>	
+			  		<label for="account">Account</label>
+			    	<input type="text" className="form-control" id="account" defaultValue={itemDetails.account} />
+			  	</div>
+			  	<div className='col-md-3'>	
+			  		<label for="account-sub">Sub Account</label>
+			    	<input type="text" className="form-control" id="account-sub" defaultValue={itemDetails.accountSub} />
+			  	</div>
+			  </div>
+			  <div className="form-row">
+			  	<div className='col-md-4'>
+			    	<label for="po">PO#</label>
+			    	<input type="text" className="form-control" id="po" defaultValue={itemDetails.po} />
+			  	</div>
+			  	<div className='col-md-4'>	
+			  		<label for="invoice">Invoice #</label>
+			    	<input type="text" className="form-control" id="invoice" defaultValue={itemDetails.invoice} />
+			  	</div>
+			  	<div className='col-md-4'>	
+			  		<label for="location">Repair Location</label>
+			    	<input type="text" className="form-control" id="location" defaultValue={itemDetails.location} />
+			  	</div>
+			  </div>
+			  <div className="form-row">
+			  	<div className='col-md-3'>
+			    	<label for="manufacturer">Manufacturer</label>
+			    	<input type="text" className="form-control" id="manufacturer" defaultValue={itemDetails.manufacturer} />
+			  	</div>
+			  	<div className='col-md-3'>
+			    	<label for="catalog-number">Catalog #</label>
+			    	<input type="text" className="form-control" id="catalog-number" defaultValue={itemDetails.catalogNumber} />
+			  	</div>
+			  	<div className='col-md-3'>
+			    	<label for="serial-number">Serial #</label>
+			    	<input type="text" className="form-control" id="serial-number" defaultValue={itemDetails.serialNumber} />
+			  	</div>
+			  	<div className='col-md-3'>
+			    	<label for="description">Description</label>
+			    	<input type="text" className="form-control" id="description" defaultValue={itemDetails.description} />
+			  	</div>
+			  </div>
+			  <div className="form-group">
+			    <label for="notes">Notes</label>
+			    <textarea className="form-control" id="notes" rows="3"></textarea>
+			  </div>
+			  <div>
+			  	<button className='btn btn-warning'>Update</button>
+			  	<button className='btn btn-primary' onClick={showItemDetail}>Close</button>
+			  </div>
+			</form>
 		</div>
 	</div>
-);
+	);
+};
 
 export default ProjectItemDetail;
 
