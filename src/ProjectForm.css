@@ -1,14 +1,11 @@
-.project-form-outer {
+.project-form-container {
 	border: 1px solid black;
 	border-radius: 2px;
 	padding: 15px;
 	display: flex;
 	flex-direction: column;
-}
+	background-color: #eee;
 
-.project-form-inner {
-	display: flex;
-	padding: 5px 0;
 }
 
 textarea {
