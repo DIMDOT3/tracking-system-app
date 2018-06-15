@@ -10,11 +10,11 @@ const ProjectItemDetail = ({itemDetails, showItemDetail}) => {
 				<div className="form-row">
 			    <div className='col-md-3'>
 			    	<label for="date-received">Date Received</label>
-			    	<input type="date" className="form-control" id="date-received" defaultValue={itemDetails.dateReceived} />
+			    	<input type="text" className="form-control" id="date-received" defaultValue={itemDetails.dateReceived} />
 			  	</div>
 			  	<div className='col-md-3'>
 			    	<label for="date-received">Date Returned</label>
-			    	<input type="date" className="form-control" id="date-received" defaultValue={itemDetails.dateReturned} />
+			    	<input type="text" className="form-control" id="date-received" defaultValue={itemDetails.dateReturned} />
 			  	</div>
 			  	<div className='col-md-3'>	
 			  		<label for="account">Account</label>
@@ -44,22 +44,22 @@ const ProjectItemDetail = ({itemDetails, showItemDetail}) => {
 			    	<label for="manufacturer">Manufacturer</label>
 			    	<input type="text" className="form-control" id="manufacturer" defaultValue={itemDetails.manufacturer} />
 			  	</div>
-			  	<div className='col-md-3'>
+			  	<div className='col-md-2'>
 			    	<label for="catalog-number">Catalog #</label>
 			    	<input type="text" className="form-control" id="catalog-number" defaultValue={itemDetails.catalogNumber} />
 			  	</div>
-			  	<div className='col-md-3'>
+			  	<div className='col-md-2'>
 			    	<label for="serial-number">Serial #</label>
 			    	<input type="text" className="form-control" id="serial-number" defaultValue={itemDetails.serialNumber} />
 			  	</div>
-			  	<div className='col-md-3'>
+			  	<div className='col-md-5'>
 			    	<label for="description">Description</label>
 			    	<input type="text" className="form-control" id="description" defaultValue={itemDetails.description} />
 			  	</div>
 			  </div>
 			  <div className="form-group">
 			    <label for="notes">Notes</label>
-			    <textarea className="form-control" id="notes" rows="3"></textarea>
+			    <textarea className="form-control" id="notes" rows="3" defaultValue={itemDetails.notes}></textarea>
 			  </div>
 			  <div>
 			  	<button className='btn btn-warning'>Update</button>

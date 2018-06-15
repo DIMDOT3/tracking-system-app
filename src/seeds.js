@@ -1,6 +1,8 @@
+import moment from 'moment';
+
 const projects = [
 	{
-		dateReceived: new Date().toString(),
+		dateReceived: moment().get().format('MM/DD/YYYY'),
 		dateReturned: '',
 		turnTime: '',
 		segment: 'SIRX',
@@ -18,7 +20,7 @@ const projects = [
 		id: 0
 	},
 	{
-		dateReceived: new Date().toString(),
+		dateReceived: moment().get().format('MM/DD/YYYY'),
 		dateReturned: '',
 		turnTime: '',
 		segment: 'SIRX',
@@ -36,7 +38,7 @@ const projects = [
 		id: 1
 	},
 	{
-		dateReceived: new Date().toString(),
+		dateReceived: moment().get().format('MM/DD/YYYY'),
 		dateReturned: '',
 		turnTime: '',
 		segment: 'SIRX',
@@ -54,7 +56,7 @@ const projects = [
 		id: 2
 	},
 	{
-		dateReceived: new Date().toString(),
+		dateReceived: moment().get().format('MM/DD/YYYY'),
 		dateReturned: '',
 		turnTime: '',
 		segment: 'SIRX',
