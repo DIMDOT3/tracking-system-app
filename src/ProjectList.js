@@ -24,6 +24,8 @@ class ProjectList extends Component {
     })
   };
 
+  handleUpdateProject = () => {};
+
   toggleHidden = () => {
     this.setState({
       formIsHidden: !this.state.formIsHidden
@@ -49,7 +51,7 @@ class ProjectList extends Component {
       );
     });
 		return(
-      <div>
+      <div className='project-list-container'>
         <header className='flex'>
           <h1>Project Log</h1>
           <button 
